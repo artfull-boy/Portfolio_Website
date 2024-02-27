@@ -2,7 +2,10 @@ import React, {useEffect, useRef} from 'react'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import './HeroSection.css'
 import bgImg from '../../images/1.png'
-import AnimatedCursor from "react-animated-cursor"
+import bg from '../../images/background.png'
+import v1 from '../../images/Vector-1.png'
+import v2 from '../../images/Vector.png'
+
 
 function HeroSection() {
    const [text] = useTypewriter({
@@ -15,7 +18,9 @@ function HeroSection() {
     
   return (
     <section id="hero">
-        <img className='bgImg' src={bgImg} />
+        <img className='bgImg' src={bg} />
+        <img className='bgvec' src={v1} />
+        <img className='bgvec1' src={v2} />
 		<h1>Hi I'm Ilias Rais, a <br/>
 			<span id="typewrite">{text}</span>
 			<span id="cursor"><Cursor cursorStyle="|" /></span>
@@ -27,13 +32,13 @@ function HeroSection() {
         <div className='button'>
             <a href={`${process.env.PUBLIC_URL}/CV.pdf`}  download='Ilias Rais.pdf'>
             <button className='primary'>
-                Download Resume
+                Resume
                 <img src='https://em-content.zobj.net/source/apple/354/artist-palette_1f3a8.png' width={23} height={23}></img>
             </button>
             </a>
             <a href="https://www.behance.net/gallery/165747755/Modern-Portfolio-Graphic-Design" target='_blank'>
             <button className='secondary'>
-                My portfolio
+                Portfolio
                 <img src='https://em-content.zobj.net/source/apple/354/page-with-curl_1f4c3.png' width={23} height={23}></img>
             </button>
             </a>
