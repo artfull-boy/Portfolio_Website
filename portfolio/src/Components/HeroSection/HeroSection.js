@@ -2,6 +2,7 @@ import React, {useEffect, useRef} from 'react'
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import './HeroSection.css'
 import bgImg from '../../images/1.png'
+import AnimatedCursor from "react-animated-cursor"
 
 function HeroSection() {
    const [text] = useTypewriter({

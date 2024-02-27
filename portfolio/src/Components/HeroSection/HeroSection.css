@@ -37,6 +37,9 @@
 #hero h1 span {
     color: #0000FF;
 }
+#hero h1 span#typewrite {
+    color: #ffffff;
+}
 #hero .description {
     color: white;
     font-size: 26px;

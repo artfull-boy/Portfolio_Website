@@ -4,6 +4,10 @@
   padding: 0;
   font-family: "Quicksand", sans-serif;
 }
+*::selection {
+  color: white;
+  background-color: #0000ff;
+}
 a {
   text-decoration: none;
 }
