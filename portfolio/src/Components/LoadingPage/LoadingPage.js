@@ -1,12 +1,15 @@
 import React, {useEffect, useRef} from 'react'
-import { gsap } from "gsap-trial";
-import { DrawSVGPlugin } from "gsap-trial/DrawSVGPlugin";
+import gif from '../../images/logo.gif'
 import './LoadingPage.css'
-gsap.registerPlugin(DrawSVGPlugin);
+
+
+
 
 function LoadingPage() {
     return (
-     <>Hello</>
+        <div className='container_loading'>
+            <img className='logoanimation' src={gif} alt='Animated Logo'></img>
+        </div>
     )
 }
 

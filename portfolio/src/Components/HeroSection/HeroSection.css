@@ -1,0 +1,58 @@
+#hero {
+    background-color: black;
+    width: 100vw;
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 27px;
+}
+#hero h1 {
+    font-size: 90px;
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+#hero h1 span {
+    color: #0000FF;
+}
+#hero .description {
+    color: white;
+    font-size: 26px;
+    line-height: 1.3em;
+    font-weight: 400;
+    text-align: center;
+}
+#hero .button {
+    display: flex;
+    gap: 14px;
+}
+#hero .button button {
+    padding: 15px 28px;
+    border-radius: 14px;
+    font-size: 19px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: white;
+    gap: 7px;
+    transition: background-color .4s ease;
+    cursor: pointer;
+}
+#hero .button .primary {
+    background-color: #0000FF;
+    position: relative;
+
+}
+#hero .button .secondary {
+    background-color: #2A2A2A;
+}
+#hero .button .primary:hover {
+    background-color: #02028e;
+}
+#hero .button .secondary:hover {
+    background-color: #1e1d1d;
+}
