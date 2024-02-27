@@ -1,9 +1,7 @@
 import React, {useEffect, useRef} from 'react'
-import { gsap } from "gsap";
-import { TextPlugin } from "gsap/TextPlugin";
 import {useTypewriter, Cursor} from 'react-simple-typewriter'
 import './HeroSection.css'
-gsap.registerPlugin(TextPlugin);
+import bgImg from '../../images/1.png'
 
 function HeroSection() {
    const [text] = useTypewriter({
@@ -16,6 +14,7 @@ function HeroSection() {
     
   return (
     <section id="hero">
+        <img className='bgImg' src={bgImg} />
 		<h1>Hi I'm Ilias Rais, a <br/>
 			<span id="typewrite">{text}</span>
 			<span id="cursor"><Cursor cursorStyle="|" /></span>
