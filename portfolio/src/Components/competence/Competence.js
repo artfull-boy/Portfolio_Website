@@ -1,25 +1,29 @@
 import React from 'react'
 import './Competence.css'
 import ux from '../../images/ux.png'
+import responsive from '../../images/reponsive.png'
+import jsonfile from "../../infos/canDo.json"
+
 
 function Competence() {
   return (
-    <div className='competence px-28 flex flex-col gap-7 justify-center content-center'>
-        <p className='font-bold text-xl'>What Can I Do</p>
-        <div className='relative do flex justify-between px-[65px] py-[50px] w-full content-center bg-[#F5F5F5] rounded-[71px]'>
-            <div className='texts relative flex flex-col gap-7 justify-center'>
-                <p className='text-[28px] font-normal self-start'>UX/UI Design</p>
-                <div className='flex flex-col gap-3 self-start'>
-                    <p className='font-semibold self-start text-6xl'>User-Friendly.</p>
-                    <p className='font-semibold self-start text-6xl'>Attractive.</p>
-                    <p className='font-semibold self-start text-6xl'>Functional.</p>
-                    <p className='font-normal self-start text-xl flex content-center gap-1'>Experience: 1+ Year <img src='https://em-content.zobj.net/source/apple/354/flexed-biceps_light-skin-tone_1f4aa-1f3fb_1f3fb.png' width={20}></img></p>
+    <div className='competence xl:px-28 lg:px-20 md:px-16 sm:px-10 px-3  flex flex-col gap-7 justify-center content-center'>
+        <p className='font-bold text-xl'>What I Can Do</p>
+        {jsonfile.map(skill => (
+        <div className='relative do md:flex md:flex-row flex flex-col gap-8 justify-between px-[65px] py-[50px] w-full content-center bg-[#F5F5F5] rounded-[71px] lg:h-[480px] h-auto overflow-hidden'>
+            <div className='texts relative flex flex-col gap-7 justify-center md:text-left text-center'>
+                <p className='md:text-[28px] text-[20px] font-normal md:self-start self-center'>{skill.domain}</p>
+                <div className='flex flex-col gap-3 md:self-start self-center font-semibold '>
+                    {skill.words.map(word => <p className='xl:text-6xl text-5xl'>{word}</p>)}
+                    <p className='font-normal text-xl flex content-center gap-1 justify-center md:justify-start'>{skill.Experience} <img src='https://em-content.zobj.net/source/apple/354/flexed-biceps_light-skin-tone_1f4aa-1f3fb_1f3fb.png' width={20}></img></p>
                 </div>
             </div>
-            <img src={ux} className='picture w-[50%] z-10'/>
+            <img src={skill.picture} className='picture md:max-w-[250px] md:block hidden z-10 object-contain'/>
         </div>
-    </div>
-  )
-}
+  ))}
+  </div>
+  )}
+
+
 
 export default Competence
