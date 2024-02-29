@@ -7,12 +7,12 @@
             "Functional."
         ],
         "Experience":"Experience: 1+ Year",
-        "picture":"../public/images/ux.png"
+        "picture":"../../images/ux.png"
     },
     {
         "domain":"Front-end Development",
         "words": [
-            "Responsive.",
+            "Responsive_>",
             "Engaging.",
             "Seamless."
         ],

@@ -1,7 +1,5 @@
 import React from 'react'
 import './Competence.css'
-import ux from '../../images/ux.png'
-import responsive from '../../images/reponsive.png'
 import jsonfile from "../../infos/canDo.json"
 
 
@@ -9,8 +7,8 @@ function Competence() {
   return (
     <div className='competence xl:px-28 lg:px-20 md:px-16 sm:px-10 px-3  flex flex-col gap-7 justify-center content-center'>
         <p className='font-bold text-xl'>What I Can Do</p>
-        {jsonfile.map(skill => (
-        <div className='relative do md:flex md:flex-row flex flex-col gap-8 justify-between px-[65px] py-[50px] w-full content-center bg-[#F5F5F5] rounded-[71px] lg:h-[480px] h-auto overflow-hidden'>
+        {jsonfile.map((skill,index) => (
+        <div key={index} className='relative do md:flex md:flex-row flex flex-col gap-8 justify-between px-[65px] py-[50px] w-full content-center bg-[#F5F5F5] rounded-[71px] lg:h-[480px] h-auto overflow-hidden'>
             <div className='texts relative flex flex-col gap-7 justify-center md:text-left text-center'>
                 <p className='md:text-[28px] text-[20px] font-normal md:self-start self-center'>{skill.domain}</p>
                 <div className='flex flex-col gap-3 md:self-start self-center font-semibold '>
