@@ -3,6 +3,8 @@ import HeroSection from './Components/HeroSection/HeroSection';
 import LoadingPage from './Components/LoadingPage/LoadingPage';
 import React, {useState, useEffect} from "react"
 import AnimatedCursor from "react-animated-cursor"
+import Competence from './Components/competence/Competence';
+
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -11,11 +13,11 @@ function App() {
     // Simulate loading delay (you can replace this with actual data fetching)
     setTimeout(() => {
       setLoading(false);
-    }, 5000);
+    }, 1000);
   }, []);
 
   return (
-     <div>
+     <div className='flex flex-col gap-20'>
              
       {loading ? (
         <LoadingPage />
@@ -23,6 +25,9 @@ function App() {
         <>
 
         <HeroSection />
+        <Competence />
+
+
         </>
       )}
        <AnimatedCursor

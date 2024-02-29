@@ -29,7 +29,7 @@ function HeroSection() {
         Who picks a book by its cover... <br/>
         Because if the cover doesn't grab you, what else will?
         </p>
-        <div className='button'>
+        <div className='button '>
             <a href={`${process.env.PUBLIC_URL}/CV.pdf`}  download='Ilias Rais.pdf'>
             <button className='primary'>
                 Resume
