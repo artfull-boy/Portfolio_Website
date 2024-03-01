@@ -4,6 +4,7 @@ import LoadingPage from './Components/LoadingPage/LoadingPage';
 import React, {useState, useEffect} from "react"
 import AnimatedCursor from "react-animated-cursor"
 import Competence from './Components/competence/Competence';
+import Projects from './Components/Projects/Projects';
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
 
         <HeroSection />
         <Competence />
+        <Projects />
 
 
         </>

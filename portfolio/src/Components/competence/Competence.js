@@ -5,7 +5,7 @@ import jsonfile from "../../infos/canDo.json"
 
 function Competence() {
   return (
-    <div className='competence xl:px-28 lg:px-20 md:px-16 sm:px-10 px-3  flex flex-col gap-7 justify-center content-center'>
+    <div className='competence container'>
         <p className='font-bold text-xl'>What I Can Do</p>
         {jsonfile.map((skill,index) => (
         <div key={index} className='relative do md:flex md:flex-row flex flex-col gap-8 justify-between px-[65px] py-[50px] w-full content-center bg-[#F5F5F5] rounded-[71px] lg:h-[480px] h-auto overflow-hidden'>

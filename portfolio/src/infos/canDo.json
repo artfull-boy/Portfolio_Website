@@ -7,7 +7,7 @@
             "Functional."
         ],
         "Experience":"Experience: 1+ Year",
-        "picture":"../../images/ux.png"
+        "picture":"/assets/ux.png"
     },
     {
         "domain":"Front-end Development",
@@ -17,6 +17,6 @@
             "Seamless."
         ],
         "Experience":"Experience: 1+ Year",
-        "picture":"public/images/reponsive.png"
+        "picture":"/assets/reponsive.png"
     }
 ]
