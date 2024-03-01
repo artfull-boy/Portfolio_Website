@@ -88,18 +88,17 @@
     padding: 0px 25px;
 }
 #hero .button button {
-    padding: 15px 28px;
-    border-radius: 14px;
-    font-size: 19px;
-    font-weight: 400;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border: none;
-    color: white;
-    gap: 7px;
-    transition: background-color .4s ease;
-    cursor: pointer;
+        width: 160px;
+        height: 160px;
+        border-radius: 50%;
+        border: none;
+        background-color: #0000FF;
+        color: white;
+        cursor: pointer;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
 }
 #hero .button .primary {
     background-color: #0000FF;
@@ -132,11 +131,7 @@
     #hero .description {
         font-size: 20px;
     }
-    #hero .button button {
-        padding: 10px 24px;
-        border-radius: 14px;
-        font-size: 15px;
-    }
+    
 }
 @media (max-width:720px) {
     #hero h1{
@@ -147,8 +142,6 @@
         font-size: 18px;
     }
     #hero .button button {
-        padding: 10px 24px;
-        border-radius: 14px;
         font-size: 14px;
     }
 }
@@ -161,12 +154,7 @@
         font-size: 16px;
     }
     #hero .button button {
-        padding: 10px 24px;
-        border-radius: 14px;
         font-size: 14px;
     }
-
-}
-@media (max-width:580px) {
 
 }
