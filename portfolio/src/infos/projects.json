@@ -1,5 +1,13 @@
 [
     {
+        "logo":"/assets/ciamlogo.png",
+        "name":"CIAM Website",
+        "domain":["UX/UI Design","Full-Stack Development"],
+        "description":"As a freelancer, I was responsible for designing the new Website of CIAM, and putting all the tools necessary to develop the website making it responsive and enjoyable.",
+        "bgIMG":"/assets/ciambg.png",
+        "link":"https://ciamcasa.com"
+    },
+    {
         "logo":"/assets/unitykicklogo.png",
         "name":"UnityKick World Cup",
         "domain":["UX/UI Design","Front-End Project"],
@@ -38,13 +46,5 @@
         "description":"Collaborate with the talented team at Gwala to create solutions that simplify and streamline HR processes, making the lives of both employers and employees easier.",
         "bgIMG":"/assets/gwalabg2.png",
         "link":""
-    },
-    {
-        "logo":"/assets/ciamlogo.png",
-        "name":"CIAM Website",
-        "domain":["UX/UI Design","Full-Stack Development"],
-        "description":"MovieBox, in collaboration with the TMDB API, provides a unified solution, amalgamating comprehensive data on films into an easily navigable platform.",
-        "bgIMG":"/assets/ciambg.png",
-        "link":"https://ciamcasa.com"
     }
 ]

@@ -8,11 +8,19 @@ import v2 from '../../images/Vector.png';
 import gsap from 'gsap';
 
 function HeroSection() {
+  const [blinking, setBlinking] = React.useState(true)
   const [text] = useTypewriter({
     words: ["Software Engineering", "Frontend Developer", "UX/UI Designer"],
     loop: true, // Assuming you want the typewriter effect to loop
     typeSpeed: 120,
     deleteSpeed: 100,
+    onDelete: ()=> {
+      setBlinking(false)
+    },
+    onType: () => {
+      setBlinking(true)
+    }
+
   });
 
   const magnetoRef = useRef(null);
@@ -81,7 +89,7 @@ function HeroSection() {
         <img className='bgvec1' src={v2} alt="Vector 2" />
         <h1>Hi I'm Ilias Rais, a <br/>
             <span id="typewrite">{text}</span>
-            <Cursor cursorStyle="|" />
+            <Cursor cursorStyle="|" cursorBlinking={blinking} />
         </h1>
         <p className='description'>
         Who picks a book by its cover... <br/>

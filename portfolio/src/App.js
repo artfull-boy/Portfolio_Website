@@ -5,6 +5,7 @@ import React, {useState, useEffect} from "react"
 import AnimatedCursor from "react-animated-cursor"
 import Competence from './Components/competence/Competence';
 import Projects from './Components/Projects/Projects';
+import Work from './Components/work/Work';
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
         <HeroSection />
         <Competence />
         <Projects />
+        <Work />
 
 
         </>

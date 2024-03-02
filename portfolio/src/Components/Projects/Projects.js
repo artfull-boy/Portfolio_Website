@@ -40,8 +40,8 @@ export default function Projects() {
           }}
         >
           {jsonData.map((project) => (
-            <a href={project.link} target="_blank">
-              <SwiperSlide>
+            <a key={project.link} href={project.link} target="_blank">
+              <SwiperSlide key={project.description}>
                 <img
                   src={project.bgIMG}
                   className="absolute left-0 bottom-0 w-full h-full z-[-1] object-cover"
@@ -53,8 +53,8 @@ export default function Projects() {
                       {project.name}
                     </p>
                     <div className="flex gap-2 justify-center">
-                      {project.domain.map((proj) => (
-                        <div
+                      {project.domain.map((proj,index) => (
+                        <div key={index}
                           className={`${
                             proj == "Confidential"
                               ? "bg-[#FB0000] text-[#ffffff]"

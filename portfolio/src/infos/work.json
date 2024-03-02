@@ -1,0 +1,23 @@
+[
+    {
+        "active":"none",
+        "type":"Part-Time",
+        "profile":"Junior UX/UI Designer",
+        "entreprise":"Gwala",
+        "img":"/assets/gwalalogo2.png"
+    },
+    {
+        "active":"none",
+        "type":"Internship - 2 Months",
+        "profile":"UX/UI Designer",
+        "entreprise":"Gwala",
+        "img":"/assets/gwalalogo2.png"
+    },
+    {
+        "active":"none",
+        "type":"Freelance - 1 Month",
+        "profile":"UX/UI Designer",
+        "entreprise":"Miratti Bags",
+        "img":"/assets/mirattilogo.png"
+    }
+]
