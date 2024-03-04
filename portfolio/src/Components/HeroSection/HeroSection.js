@@ -1,7 +1,6 @@
 import React, { useEffect, useRef } from 'react';
 import { useTypewriter, Cursor } from 'react-simple-typewriter';
 import './HeroSection.css';
-import bgImg from '../../images/1.png'; // Note: This import isn't used in your provided code
 import bg from '../../images/background.png';
 import v1 from '../../images/Vector-1.png';
 import v2 from '../../images/Vector.png';

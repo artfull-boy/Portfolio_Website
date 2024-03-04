@@ -34,7 +34,7 @@
 
 .animation > .animated {
     transform: translate(0%,0%);
-    width: 40px;
+    width: 28px;
     position: relative;
     animation: upright infinite .8s alternate ease-in-out;
     animation-play-state: paused;

@@ -1,4 +1,4 @@
-import React, {useEffect, useRef} from 'react'
+import React from 'react'
 import gif from '../../images/logo.gif'
 import './LoadingPage.css'
 

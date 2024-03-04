@@ -6,16 +6,30 @@ import AnimatedCursor from "react-animated-cursor"
 import Competence from './Components/competence/Competence';
 import Projects from './Components/Projects/Projects';
 import Work from './Components/work/Work';
+import Testimonials from './Components/Testimonials/Testimonials';
+import Footer from './Components/Footer/Footer';
+import Lenis from '@studio-freight/lenis'
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+
 
 
 function App() {
   const [loading, setLoading] = useState(true);
-
+  
+  const lenis = new Lenis()
+  
+  lenis.on('scroll', ScrollTrigger.update)
+  
+  gsap.ticker.add((time)=>{
+    lenis.raf(time * 1000)
+  })
+  
+  gsap.ticker.lagSmoothing(0)
   useEffect(() => {
-    // Simulate loading delay (you can replace this with actual data fetching)
     setTimeout(() => {
       setLoading(false);
-    }, 1000);
+    }, 4000);
   }, []);
 
   return (
@@ -27,9 +41,11 @@ function App() {
         <>
 
         <HeroSection />
-        <Competence />
+        <Competence/>
         <Projects />
         <Work />
+        <Testimonials />
+        <Footer />
 
 
         </>
