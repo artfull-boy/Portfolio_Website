@@ -18,8 +18,8 @@ function Footer() {
         </a>
       </div>
       <div className='flex sm:flex-row flex-col gap-2 justify-between mb-3 items-center'>
-        <p className='text-[16px] font-medium  order-1'>
-        Last Update on <span className='font-bold'>5/03/2023</span>
+        <p className='text-[16px] font-medium  order-1 text-center w-[100%]'>
+        Last Update on <span className='font-bold inline'>5/03/2023</span>
         </p>
         <a rel="noreferrer" href='https://artfull-boy.github.io/Portfolio/' target='_blank'>
             <div className='flex justify-center items-center p-3 bg-[#0000ff] rounded-[50%] text-[16px] font-medium text-white w-[40px] h-[40px]'>

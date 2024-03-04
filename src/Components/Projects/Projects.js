@@ -34,20 +34,20 @@ export default function Projects() {
           slidesPerView={"auto"}
           scrollbar={{ draggable: true }}
           autoplay={{
-            delay: 10000,
-            disableOnInteraction: true,
+            delay: 3000,
+            disableOnInteraction: false,
           }}
         >
           {jsonData.map((project) => (
             <a rel="noreferrer" key={project.link} href={project.link} target="_blank">
               <SwiperSlide key={project.description}>
                 <img
-                  src={project.bgIMG}
+                  src={`${process.env.PUBLIC_URL}/${project.bgIMG}`}
                   className="absolute left-0 bottom-0 w-full h-full z-[-1] object-cover"
                   alt="project Mockups"
                 ></img>
                 <div className="flex flex-col justify-start items-center gap-4">
-                  <img src={project.logo} width={69} height={69} alt="project logo"></img>
+                  <img src={`${process.env.PUBLIC_URL}/${project.logo}`} width={69} height={69} className="h-[69px] object-contain" alt="project logo"></img>
                   <div className="flex flex-col gap-3 justify-center content-center">
                     <p className="text-3xl font-semibold text-white">
                       {project.name}

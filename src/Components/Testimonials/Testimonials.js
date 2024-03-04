@@ -24,8 +24,8 @@ function Testimonials() {
         navigation={true}
         scrollbar={{ draggable: true }}
         autoplay={{
-          delay: 10000,
-          disableOnInteraction: true,
+          delay: 3000,
+          disableOnInteraction: false,
         }}
       >
         

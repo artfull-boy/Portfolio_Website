@@ -29,8 +29,10 @@ function App() {
   useEffect(() => {
     setTimeout(() => {
       setLoading(false);
-    }, 4000);
+    }, 3000);
   }, []);
+   // Check if the device width is greater than a certain value (e.g., 600px for mobile)
+   const isMobile = window.innerWidth <= 600;
 
   return (
      <div className='flex flex-col gap-20'>
@@ -50,14 +52,16 @@ function App() {
 
         </>
       )}
-       <AnimatedCursor
-      innerSize={10}
-      outerSize={20}
-      color='0, 0, 255'
-      outerAlpha={0.4}
-      innerScale={0.5}
-      outerScale={5}
-    />
+      {!isMobile && (
+        <AnimatedCursor
+          innerSize={10}
+          outerSize={20}
+          color='0, 0, 255'
+          outerAlpha={0.4}
+          innerScale={0.5}
+          outerScale={5}
+        />
+      )}
     </div>
   );
 }
