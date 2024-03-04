@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/IliasRais/static/css/main.f8a7b9ea.css",
+    "main.js": "/IliasRais/static/js/main.76e9237e.js",
+    "static/media/Vector.png": "/IliasRais/static/media/Vector.4b394d10c4f0fd6ed03f.png",
+    "static/media/Vector-1.png": "/IliasRais/static/media/Vector-1.ad53517accf066cd29f7.png",
+    "static/media/background.png": "/IliasRais/static/media/background.9765b2045a56b1b5dda4.png",
+    "static/media/logo.gif": "/IliasRais/static/media/logo.0caaa3b521da06358fe5.gif",
+    "index.html": "/IliasRais/index.html",
+    "main.f8a7b9ea.css.map": "/IliasRais/static/css/main.f8a7b9ea.css.map",
+    "main.76e9237e.js.map": "/IliasRais/static/js/main.76e9237e.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f8a7b9ea.css",
+    "static/js/main.76e9237e.js"
+  ]
+}
