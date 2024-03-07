@@ -9,7 +9,7 @@ import gsap from 'gsap';
 function HeroSection() {
   const [blinking, setBlinking] = React.useState(true)
   const [text] = useTypewriter({
-    words: ["Software Engineering", "Frontend Developer", "UX/UI Designer"],
+    words: ["Software Engineer", "Frontend Developer", "UX/UI Designer"],
     loop: true, // Assuming you want the typewriter effect to loop
     typeSpeed: 120,
     deleteSpeed: 100,
